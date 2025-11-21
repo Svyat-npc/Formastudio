@@ -21,6 +21,7 @@ body{
 a{
     color: inherit;
     text-decoration: none;
+
 }
 ul{
     list-style: none;
@@ -30,8 +31,18 @@ button{
     background-color: transparent;
     padding: 0;
     border: none;
+    font-family: inherit;
+    color: inherit;
 }
 
+input{
+    font-family: inherit;
+    color: inherit;
+}
+input::placeholder{
+    font-family: inherit;
+    color: inherit;
+}
 .container{
     max-width: 1720px;
     padding: 0 10px;
@@ -294,14 +305,228 @@ padding-top: 6px;
     object-fit: cover;
 }
 
+.catalog__title{
+    max-width: 556px;
+}
+
+.catalog__content{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+
+.catalog__form{
+    max-width: 560px;
+  width: 100%;
+
+}
+.catalog__title {
+    max-width: 556px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.16;
+    margin-bottom: 60px;
+
+}
+.catalog__form-title{
+  max-width: 430px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 1.16;
+  font-weight: 300;
+}
+.catalog__form-text{
+  max-width: 430px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.16;
+  font-weight: 300;
+
+}
+
+.catalog__form-input{
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #171717;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.16;
+  margin-bottom: 30px;
+  display: block;
+}
+.catalog__form-lable{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.16;
+    margin-bottom: 50px;
+}
+
+.catalog__form-checkbox{
+    width: 16px;
+    height: 16px;
+    accent-color: #171717;
+}
+
+.catalog__form-btn{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.16;
+    font-weight: 300;
+    color: #f5f5f5;
+    padding: 20px 49px;
+    background-color: #171717;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 
+.request{
+    padding-bottom: 150px;
+}
+
+.request__inner{
+    background-image: url(image/request_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 184px 0;
+}
+
+.request__inner-form{
+    background-color: rgba(23, 23, 23, 0.85);
+    max-width: 1000px;
+    padding: 75px 115px;
+    margin: 0 auto;
+
+ 
+}
+.request__title{
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.16;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+}
+
+.request__form{
+    display: flex;
+}
+.request__form-input{
+  display: inline-block;
+  padding: 20px;
+  border: none;
+  background-color: #d9d9d9;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.16;
+  color: #2b2b2b;
+  width: 100%;
+}
+
+.request__form-btn{
+    background-color: #f5f5f5;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.16;
+    font-weight: 300;
+    padding: 20px 50px;
+    width: 360px;
+} 
+
+.footer{
+    background-color: #171717;
+    padding: 100px 0;
+       color: #f5f5f5;
+}
+.footer__copy{
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+    line-height: 1.16;
+    font-weight: 300;
+}
+
+.footer__inner{
+    display: flex;
+    align-items: end;
+    gap: 100px;
+    padding-right: 174px;
+    margin-bottom: 10px;
+
+}
+.footer__logo{
+    margin-right: auto;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.footer__social{
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.footer__social-link{
+  display: flex;
+  gap: 10px;
+  line-height: 1.16;
+}
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.16;
+}
+
+.footer__contacts-link{
+    display: flex;
+    gap: 10px;
+    line-height: 1.16;
+}
+
+.footer__contacts-map{
+    align-self: start;
+}
 
 
 
-
-
+@media (max-width:1500px) {
+ .footer__inner{
+    gap: 50px;
+    padding-right: 0;
+ }
+}
 @media (max-width:1300px) {
 .menu__btn{
     display: flex;
@@ -330,8 +555,40 @@ padding-top: 6px;
     padding-bottom: 40px;
 
 }
+.catalog__content{
+    display: block;
+}
+.catalog__content img{
+    width: 100%;
+    margin-bottom: 40px;
+}
 }
 
+@media (max-width:1090px){
+    .gallery{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer__inner{
+        gap: 30px 135px;
+        padding-right: 0;
+    }
+    .footer__nav{
+        display: none;
+    }
+}
+
+@media (max-width:820px){
+    .footer__inner{
+        flex-direction: column;
+        gap: 30px;
+        padding-right: 0;
+        align-items: start;
+    }
+}
 @media (max-width:740px) {
   .header__top{
     padding: 40px 0;
@@ -356,6 +613,36 @@ padding-top: 6px;
   .steps{
     padding: 50px 0;
   }
+  .catalog__content{
+    margin-bottom: 50px;
+  }
+  .catalog__form{
+    max-width: 100%;
+  }
+  .gallery{
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
+  
+.request{
+    padding-bottom: 50px;
+
+}
+.request__inner{
+
+    padding: 85px 0;
+}
+.request__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.request__form-btn{
+    width: 100%;
+}
+.request__inner-form{
+    padding: 40px 20px; 
+}
 }
 @media (max-width:540px){
     .header__phone span{
@@ -394,5 +681,32 @@ padding-top: 6px;
         padding-top: 0;
         margin-bottom: 5px;
 
+    }
+    .catalog__content img{
+        margin-bottom: 20px;
+    }
+    .catalog__form-title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .catalog__form-text{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .catalog__form-input{
+        font-size: 18px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .catalog__form-lable{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .catalog__form-btn{
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    .gallery{
+        grid-template-columns: 1fr;
     }
 }
