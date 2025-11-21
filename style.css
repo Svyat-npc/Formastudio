@@ -63,7 +63,7 @@ input::placeholder{
 .header{
     background-image: url(image/Background.jpg);
     background-image: image-set(
-        'image/background.avif' type('image/avif')
+        'image/Background.avif' type('image/avif')
     );
     background-repeat: no-repeat;
     background-position: center;
